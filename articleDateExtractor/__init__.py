@@ -1,5 +1,6 @@
 __author__ = 'Ran Geva'
 
+import sys
 import urllib,re, json
 from dateutil.parser import parse
 try:
@@ -230,7 +231,7 @@ def extractArticlePublishedDate(articleLink, html = None):
 
     except Exception as e:
         print ("Exception in extractArticlePublishedDate for " + articleLink)
-        print (e)
+        sys.stderr.write(e)
 
 
 
