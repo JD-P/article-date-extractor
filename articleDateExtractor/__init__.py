@@ -230,8 +230,8 @@ def extractArticlePublishedDate(articleLink, html = None):
         articleDate = possibleDate
 
     except Exception as e:
-        print ("Exception in extractArticlePublishedDate for " + articleLink)
-        sys.stderr.write(e)
+        sys.stderr.write("Exception in extractArticlePublishedDate for " + articleLink)
+        sys.stderr.write(e.reason)
 
 
 
